@@ -1,0 +1,71 @@
+﻿@model DocWeb.Models.EF.Doctor
+@{
+    ViewBag.Title = "Admin";
+    List<DocWeb.Models.EF.Title> titles = (List<DocWeb.Models.EF.Title>)ViewBag.Titles;
+    List<DocWeb.Models.EF.Province> provinces = (List<DocWeb.Models.EF.Province>)ViewBag.Provinces;
+    List<DocWeb.Models.EF.Region> regions = (List<DocWeb.Models.EF.Region>)ViewBag.Regions;
+    List<DocWeb.Models.EF.Discipline> disciplines = (List<DocWeb.Models.EF.Discipline>)ViewBag.Disciplines;
+}
+
+<h3>Admin</h3>
+<ul class="breadcrumb">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>New Doctor</li>
+</ul>
+    @using (Html.BeginForm("Admin", "Home", FormMethod.Post))
+    {
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">Title</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.DropDownListFor(m => m.TitleId, new SelectList(titles, "TitleId", "TitleDescr"), new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">Last name</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.TextBoxFor(m => m.Lastname, new { @class = "form-control", placeholder = "Last name" })
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">First name</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.TextBoxFor(m => m.Firstname, new { @class = "form-control", placeholder = "First name" })
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">ID Number</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.TextBoxFor(m => m.IdNo, new { @class = "form-control", type = "number", placeholder = "ID Number" })
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">Practice Number</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.TextBoxFor(m => m.HPCSANo, new { @class = "form-control", placeholder = "Practice Number" })
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">Discipline</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.DropDownListFor(m => m.DisciplineId, new SelectList(disciplines, "DisciplineId", "DisciplineDescr"), new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">Region</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.DropDownListFor(m => m.RegionId, new SelectList(regions, "RegionId", "RegionName"), new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-12 col-md-4 col-lg-3">Province</label>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                @Html.DropDownListFor(m => m.ProvinceId, new SelectList(provinces, "ProvinceId", "ProvinceName"), new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 text-right">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+        <div style="margin-bottom:50px"></div>
+    }

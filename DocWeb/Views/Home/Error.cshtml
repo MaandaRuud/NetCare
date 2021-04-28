@@ -1,0 +1,20 @@
+﻿@model Exception
+@{
+    ViewBag.Title = "Error";
+}
+
+<h3>Error</h3>
+<ul class="breadcrumb">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>Error</li>
+</ul>
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-sm-12 alert">
+            <div class="alert-danger text-center">
+                @Model.Message
+            </div>
+        </div>
+    </div>
+}
