@@ -82,7 +82,7 @@
           <Property Name="TitleId" Type="int" Nullable="false" />
           <Property Name="Firstname" Type="nvarchar" MaxLength="60" Nullable="false" />
           <Property Name="Lastname" Type="nvarchar" MaxLength="60" Nullable="false" />
-          <Property Name="HPCSANo" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="HCPSANo" Type="nvarchar" MaxLength="60" Nullable="false" />
           <Property Name="IdNo" Type="nvarchar" MaxLength="13" Nullable="false" />
           <Property Name="DisciplineId" Type="int" Nullable="false" />
           <Property Name="ProvinceId" Type="int" Nullable="false" />
@@ -342,7 +342,7 @@
           <Property Name="TitleId" Type="Int32" Nullable="false" />
           <Property Name="Firstname" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Lastname" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="HPCSANo" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HCPSANo" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="IdNo" Type="String" MaxLength="13" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DisciplineId" Type="Int32" Nullable="false" />
           <Property Name="ProvinceId" Type="Int32" Nullable="false" />
@@ -576,7 +576,7 @@
                 <ScalarProperty Name="TitleId" ColumnName="TitleId" />
                 <ScalarProperty Name="Firstname" ColumnName="Firstname" />
                 <ScalarProperty Name="Lastname" ColumnName="Lastname" />
-                <ScalarProperty Name="HPCSANo" ColumnName="HPCSANo" />
+                <ScalarProperty Name="HCPSANo" ColumnName="HCPSANo" />
                 <ScalarProperty Name="IdNo" ColumnName="IdNo" />
                 <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
                 <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />

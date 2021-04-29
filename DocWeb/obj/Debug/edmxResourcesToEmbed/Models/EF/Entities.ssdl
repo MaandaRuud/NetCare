@@ -77,7 +77,7 @@
     <Property Name="TitleId" Type="int" Nullable="false" />
     <Property Name="Firstname" Type="nvarchar" MaxLength="60" Nullable="false" />
     <Property Name="Lastname" Type="nvarchar" MaxLength="60" Nullable="false" />
-    <Property Name="HPCSANo" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="HCPSANo" Type="nvarchar" MaxLength="60" Nullable="false" />
     <Property Name="IdNo" Type="nvarchar" MaxLength="13" Nullable="false" />
     <Property Name="DisciplineId" Type="int" Nullable="false" />
     <Property Name="ProvinceId" Type="int" Nullable="false" />

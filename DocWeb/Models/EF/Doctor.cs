@@ -18,7 +18,7 @@ namespace DocWeb.Models.EF
         public int TitleId { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
-        public string HPCSANo { get; set; }
+        public string HCPSANo { get; set; }
         public string IdNo { get; set; }
         public int DisciplineId { get; set; }
         public int ProvinceId { get; set; }

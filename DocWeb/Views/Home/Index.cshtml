@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Doctor Search";
     List<DocWeb.Models.EF.Doctor> Doctors = (List<DocWeb.Models.EF.Doctor>)ViewBag.Doctors;
 }
 
@@ -11,7 +11,7 @@
     <div class="col-lg-12 text-right">
         @using (Html.BeginForm("Index", "Home", FormMethod.Get))
         {
-            @Html.TextBox("search") <input type="submit" name="submit" value="Search" />
+            @Html.TextBox("search") <button type="submit">Search</button>
         }
     </div>
     <div class="col-md-12 table-responsive">
@@ -33,7 +33,7 @@
                         <td>
                             <a href="~/Home/Doctor/@doc.DoctorId">
                                 <i class="glyphicon glyphicon-folder-open"></i><span>   </span>
-                                @doc.HPCSANo
+                                @doc.HCPSANo
                             </a>
                         </td>
                         <td>@doc.Title.TitleDescr</td>

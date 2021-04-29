@@ -72,7 +72,7 @@
           <ScalarProperty Name="TitleId" ColumnName="TitleId" />
           <ScalarProperty Name="Firstname" ColumnName="Firstname" />
           <ScalarProperty Name="Lastname" ColumnName="Lastname" />
-          <ScalarProperty Name="HPCSANo" ColumnName="HPCSANo" />
+          <ScalarProperty Name="HCPSANo" ColumnName="HCPSANo" />
           <ScalarProperty Name="IdNo" ColumnName="IdNo" />
           <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
           <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />

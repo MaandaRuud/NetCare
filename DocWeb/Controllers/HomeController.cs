@@ -23,7 +23,7 @@ namespace DocWeb.Controllers
                     }
                     else
                     {
-                        Doctors = context.Doctors.Where(x => x.Firstname.Contains(Search) || x.Lastname.Contains(Search) || x.HPCSANo.Contains(Search)).OrderBy(o => o.Lastname).ToList();
+                        Doctors = context.Doctors.Where(x => x.Firstname.Contains(Search) || x.Lastname.Contains(Search) || x.HCPSANo.Contains(Search)).OrderBy(o => o.Lastname).ToList();
                     }
                     var titles = context.Titles.Where(x => x.IsActive == true).ToList();
                     var disciplines = context.Disciplines.Where(x => x.IsActive == true).ToList();
@@ -86,7 +86,7 @@ namespace DocWeb.Controllers
             }
             catch (Exception error)
             {
-                return View();
+                return View("Error",error);
             }
         }
 

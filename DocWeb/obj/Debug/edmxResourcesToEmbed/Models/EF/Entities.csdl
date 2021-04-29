@@ -76,7 +76,7 @@
     <Property Name="TitleId" Type="Int32" Nullable="false" />
     <Property Name="Firstname" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Lastname" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="HPCSANo" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HCPSANo" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="IdNo" Type="String" MaxLength="13" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DisciplineId" Type="Int32" Nullable="false" />
     <Property Name="ProvinceId" Type="Int32" Nullable="false" />
